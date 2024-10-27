@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aliados</title>
+    <link href="{% static 'css/tailwind_output.css'%}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" href="{% static 'icon/aliados.png' %}" type="img/x-icon">
+</head>
+<body class="bg-yellow-400 text-white">
+    <nav class="bg-black p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Batman Comics</h1>
+            <div>
+                <a href="{% url 'inicio' %}" class="text-gray-300 hover:text-yellow-400 px-3">Inicio</a>
+                <a href="{% url 'historia' %}" class="text-gray-300 hover:text-yellow-400 px-3">Historia</a>
+                <a href="{% url 'enemigos' %}" class="text-gray-300 hover:text-yellow-400 px-3">Enemigos</a>
+                <a href="{% url 'curiosidades' %}" class="text-gray-300 hover:text-yellow-400 px-3">Curiosidades</a>
+            </div>
+        </div>
+    </nav>    
+
+    <!-- Contenido de pagina-->
+
+    <div class="container mx-auto p-6">
+        <h2 class="text-3xl text-black font-bold mb-8 text-center">Aliados de Batman</h2>
+        <div class="grid grid-flow-col-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-gray-500 rounded-lg shadow-lg p-4 text-center">
+                <img src="{% static 'img/robin.png' %}" alt="Robin" class="w-full h-40 object-cover rounded-t-lg mb-4">
+                <h3 class="text-xl font-semibold">Robin</h3>
+            </div>
+
+            <div class="bg-gray-500 rounded-lg shadow-lg p-4 text-center">
+                <img src="{% static 'img/alfred.png' %}" alt="alfred" class="w-full h-40 object-cover rounded-t-lg mb-4">
+                <h3 class="text-xl font-semibold">alfred</h3>
+            </div>
+
+            <div class="bg-gray-500 rounded-lg shadow-lg p-4 text-center">
+                <img src="{% static 'img/batgirl.png' %}" alt="Batgirl" class="w-full h-40 object-cover rounded-t-lg mb-4">
+                <h3 class="text-xl font-semibold">BatGirl</h3>
+            </div>
+
+            <div class="bg-gray-500 rounded-lg shadow-lg p-4 text-center">
+                <img src="{% static 'img/james.png' %}" alt="James" class="w-full h-40 object-cover rounded-t-lg mb-4">
+                <h3 class="text-xl font-semibold">James Gordon</h3>
+            </div>
+
+
+            <div class="bg-gray-500 rounded-lg shadow-lg p-4 text-center">
+                <img src="{% static 'img/nt.png' %}" alt="nt" class="w-full h-40 object-cover rounded-t-lg mb-4">
+                <h3 class="text-xl font-semibold">Nightwing</h3>
+            </div>
+
+            <div class="bg-gray-500 rounded-lg shadow-lg p-4 text-center">
+                <img src="{% static 'img/super.png' %}" alt="Super" class="w-full h-40 object-cover rounded-t-lg mb-4">
+                <h3 class="text-xl font-semibold">Super-Man</h3>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>

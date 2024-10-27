@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia</title>
+    <link href="{% static 'css/tailwind_output.css'%}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" href="{% static 'icon/historia.png' %}" type="img/x-icon">
+</head>
+<body class="bg-yellow-400 text-white">
+    <nav class="bg-black p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Batman Comics</h1>
+            <div>
+                <a href="{% url 'inicio' %}" class="text-gray-300 hover:text-yellow-400 px-3">Inicio</a>
+                <a href="{% url 'aliados' %}" class="text-gray-300 hover:text-yellow-400 px-3">Aliados</a>
+                <a href="{% url 'enemigos' %}" class="text-gray-300 hover:text-yellow-400 px-3">Enemigos</a>
+                <a href="{% url 'curiosidades' %}" class="text-gray-300 hover:text-yellow-400 px-3">Curiosidades</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido de pagina-->
+
+    <div class="container mx-auto p-6">
+        <h2 class="text-3xl text-black font-bold mb-4 text-center">Historia de Batman</h2>
+        <div class="flex flex-col md:flex-row items-center mb-6">
+            <img src="{% static 'img/Batman_historia.png' %}" alt="Batman_1" class="w-1/3 mb-4 md:mb-0 md:mr-6">
+            <p class="text-black md:w-2/3">Batman es la identidad secreta de Bruce Wayne, un empresario multimillonario, 
+                galán y filántropo. Presenció el asesinato de sus padres cuando era niño lo marcó profundamente y 
+                lo llevó a entrenarse en la perfección física e intelectual para ponerse un disfraz de murciélago con el fin de combatir el crimen.
+                A pesar de la seguridad fiscal, la felicidad eludió a Bruce. Bruce fue consolado por la Dr. 
+                Leslie Thompkins, quien le ayudó a llorar a sus padres y a encontrar un propósito en la vida. A los catorce años, Bruce comenzó un viaje de doce años por todo el mundo en busca de expertos en muchos campos de combate, 
+                entrenándose mental y físicamente. Desde el punto de vista académico, estudió en Cambridge (Inglaterra), la Sorbona en Francia, y otras famosas universidades europeas. Un francés llamado Henri Ducard le enseñó cómo cazar y perseguir a una persona, 
+                un ninja llamado Kirigi le enseñó el sigilo, un bosquimano africano lo entrenó en el arte de la caza, y los monjes de Nepal le enseñaron la curación.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="container mx-auto p-6">
+        <h2 class="text-3xl text-black font-bold mb-4 text-center">Edad de Oro</h2>
+        <div class="flex flex-col md:flex-row items-center mb-6">
+            <p class="text-black md:w-2/3">Durante la Edad de Oro de los cómics, cuando fue introducido por primera vez, Bruce Wayne ya era el vigilante conocido como Batman. La primera aparición de Batman fue en Detective Comics #27 y recién en Detective Comics #33 se reveló 
+                finalmente el origen del personaje. Bruce Wayne era el hijo de Thomas Wayne y su esposa, Martha Wayne. Sus padres eran multimillonarios filántropos pertenecientes a la alta sociedad de Ciudad Gótica. Bruce se crió en la Mansión Wayne y experimentó una vida privilegiada hasta que una fatídica noche,
+                 mientras Bruce y sus padres regresaban del cine fueron de repente encarados por un ladrón de poca monta llamado Joe Chill. Al principio, Chill exigió la joyería de Martha, pero terminó enfrentándose contra Thomas. Después de la muerte de sus padres, Bruce juró liberar a Ciudad Gótica del mal. Comenzó un intenso entrenamiento físico y mental y se especializo en muchas habilidades incluyendo las artes marciales, la criminología y el escapismo.
+            </p>
+            <img src="{% static 'img/Batman_oro.png' %}" alt="Batman_1" class="w-1/3 mb-4 md:mb-0 md:mr-6">
+
+        </div>
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link href="{% static 'css/tailwind_output.css'%}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" href="{% static 'icon/inicio.png' %}" type="img/x-icon">
+</head>
+<body class="flex items-center justify-center h-screen bg-black text-white">
+    <div class="text-center">
+        <a href="{% url 'historia' %}">
+            <img src="{% static 'img/batman.png' %}" alt="batman" class="mx-auto mb-4" style="width: 300px; height: 300px;">
+            <h1 class="text-2xl font-bold">Batman Comics</h1>
+        </a>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidades</title>
+    <link href="{% static 'css/tailwind_output.css'%}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" href="{% static 'icon/enemigos.png' %}" type="img/x-icon">
+</head>
+<body class="bg-yellow-400 text-white">
+    <nav class="bg-black p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Batman Comics</h1>
+            <div>
+                <a href="{% url 'inicio' %}" class="text-gray-300 hover:text-yellow-400 px-3">Inicio</a>
+                <a href="{% url 'historia' %}" class="text-gray-300 hover:text-yellow-400 px-3">Historia</a>
+                <a href="{% url 'aliados' %}" class="text-gray-300 hover:text-yellow-400 px-3">Aliados</a>
+                <a href="{% url 'enemigos' %}" class="text-gray-300 hover:text-yellow-400 px-3">Enemigos</a>
+            </div>
+        </div>
+    </nav>    
+
+    <!-- Contenido de pagina-->
+
+    <div class="container mx-auto p-6">
+        <h2 class="text-3xl text-black font-bold mb-8 text-center">Curiosidades</h2>
+        <ul class="space-y-4">
+            <li class="flex items-start">
+                <span class="text-blue-800 text-2xl mr-3">
+                </span>
+                <p class="text-lg text-black">1. Batman es una serie de cómics con el héroe homónimo de DC Comics​. El personaje apareció por primera vez en Detective Comics #27, publicado en mayo de 1939. 
+                    El personaje de Batman resultó ser tan popular que empezó a realizarse una serie homónima y se publicó su primer número en la primavera de 1940.</p>
+            </li>
+            <hr>
+            <li class="flex items-start">
+                <span class="text-blue-800 text-2xl mr-3">
+                </span>
+                <p class="text-lg text-black">2. Depende de qué cómic hablemos. Mientras que la edad de Bruce Wayne no suele abordarse, 
+                    por lo general es un hombre adulto de más de 24 años (edad que tendría si su fecha de nacimiento fuera en 1915, con su primera aparición en 1939), y ha llegado a ser un hombre mayor en algunas presentaciones.</p>
+            </li>
+            <hr>
+
+            <li class="flex items-start">
+                <span class="text-blue-800 text-2xl mr-3">
+                </span>
+                <p class="text-lg text-black">3. Sabemos que a Batman le gusta tener el control de todo y que hace hasta lo imposible con tal de obtenerlo. Pero esta obsesión por saber que todo en el mundo marcha bien. 
+                    Específicamente en Gotham City, esto lo ha llevado a violar la delgada línea de ser un vigilante a un espía.</p>
+            </li>
+            <hr>
+
+            <li class="flex items-start">
+                <span class="text-blue-800 text-2xl mr-3">
+                </span>
+                <p class="text-lg text-black">4. Batman habla también 27 idiomas, incluyendo el kryptoniano, sabe leer los labios y domina el sueño polifásico, es decir, está fresco con tan solo dormir 3 horas. 5. Tiene en común muchos atributos físicos con Supermán, solo que el hombre de acero es un año mayor y un centímetro más alto que Batman.</p>
+            </li>
+            <hr>
+
+            <li class="flex items-start">
+                <span class="text-blue-800 text-2xl mr-3">
+                </span>
+                <p class="text-lg text-black">4. Batman habla también 27 idiomas, incluyendo el kryptoniano, sabe leer los labios y domina el sueño polifásico, es decir, está fresco con tan solo dormir 3 horas. 5. Tiene en común muchos atributos físicos con Supermán, solo que el hombre de acero es un año mayor y un centímetro más alto que Batman.</p>
+            </li>
+            <hr>
+
+            <li class="flex items-start">
+                <span class="text-blue-800 text-2xl mr-3">
+                </span>
+                <p class="text-lg text-black">5. Bane derrota a Batman rompiéndole su columna. A comienzos de los noventa, la editorial 
+                    DC jugó a quebrar a los dos grandes íconos de la casa.</p>
+            </li>
+            <hr>
+
+            <li class="flex items-start">
+                <span class="text-blue-800 text-2xl mr-3">
+                </span>
+                <p class="text-lg text-black">6. Por eso, para una mente rápida como Hal Jordan, Batman puede llegar a resultar demasiado predecible. 
+                    Green Lantern reconoce así que la mayor debilidad de Batman es que planifica todo más de lo que debería. A esto se le suma el hecho de que los esfuerzos de Batman por ganar podrían considerarse su mayor perdición.</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

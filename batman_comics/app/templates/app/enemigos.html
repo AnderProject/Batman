@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enemigos</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="{% static 'css/tailwind_output.css'%}" rel="stylesheet">
+    <link rel="icon" href="{% static 'icon/enemigos.png' %}" type="img/x-icon">
+</head>
+<body class="bg-yellow-400 text-white">
+    <nav class="bg-black p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Batman Comics</h1>
+            <div>
+                <a href="{% url 'inicio' %}" class="text-gray-300 hover:text-yellow-400 px-3">Inicio</a>
+                <a href="{% url 'historia' %}" class="text-gray-300 hover:text-yellow-400 px-3">Historia</a>
+                <a href="{% url 'aliados' %}" class="text-gray-300 hover:text-yellow-400 px-3">Aliados</a>
+                <a href="{% url 'curiosidades' %}" class="text-gray-300 hover:text-yellow-400 px-3">Curiosidades</a>
+            </div>
+        </div>
+    </nav>    
+
+    <div class="container mx-auto p-6">
+        <h2 class="text-3xl text-black font-bold mb-8 text-center">Enemigos de Batman</h2>
+        <div class="grid grid-flow-col-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-green-400 rounded-lg shadow-lg p-4 overflow-hidden transform duration-300-y-2 hover:shadow-xl text-center">
+                <img src="{% static 'img/joker.gif' %}" alt="Robin" class="w-full h-40 object-cover rounded-t-lg mb-4">
+                <h3 class="text-xl text-black font-semibold">Joker</h3>
+                <p class="text-gray-800 mt-2">El destino unió a ambos personajes para siempre dando lugar a una de las enemistades más conocidas en el mundo del cómic. 
+                    La relación entre Joker y Batman se basa en una profunda rivalidad y simetría. 
+                    Joker representa el caos y la anarquía, mientras que Batman personifica el orden y la justicia.</p>
+            </div>
+
+            <div class="bg-red-600 rounded-lg shadow-lg p-4 text-center">
+                <img src="{% static 'img/quin.gif' %}" alt="quin" class="w-full h-40 object-cover rounded-t-lg mb-4">
+                <h3 class="text-xl font-semibold">Hearly Quin</h3>
+                <p class="text-white mt-2">En la serie animada, películas y otros cómics, es común que la villana se refiera a su novio como pudín, 
+                    un apodo que parecía inocente hasta que se descubrió su origen en Batman: White Knight Presents: Harley Quinn.</p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-4 text-center">
+                <img src="{% static 'img/pingui.png' %}" alt="Pingui" class="w-full h-40 object-cover rounded-t-lg mb-4">
+                <h3 class="text-xl text-black font-semibold">Pinguino</h3>
+                <p class="text-gray-800 mt-2">Oswald Chesterfield Cobblepot más conocido por su apodo Pingüino (apodo puesto debido a su vestimenta, 
+                    larga nariz, baja estatura y peso, razón por la cual fue constantemente acosado en su infancia) es un enemigo recurrente de Batman.</p>
+            </div>
+
+    </div>
+
+
+
+</body>
+</html>
